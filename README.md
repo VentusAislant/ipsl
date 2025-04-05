@@ -21,7 +21,7 @@ Image Patch Semantic Learning
     
     # 安装 mmcv, mmdet, mmpretrain
     pip install mmcv==2.1.0 mmdet mmpretrain
-    pip install git+https://github.com/cocodataset/panopticapi.git.
+    pip install git+https://github.com/cocodataset/panopticapi.git
     ```
   
 - prepare data and pretrained models
