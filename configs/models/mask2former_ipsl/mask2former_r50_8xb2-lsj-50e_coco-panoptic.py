@@ -277,3 +277,7 @@ model_wrapper_cfg = dict(
     type='MMDistributedDataParallel',
     find_unused_parameters=True
 )
+
+custom_hooks = [
+    dict(type="IpslFreezeLayersHook")
+]
