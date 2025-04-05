@@ -10,14 +10,14 @@ class IpslFreezeLayersHook(Hook):
         super().__init__()
 
     def before_train(self, runner) -> None:
-        for name, param in runner.model.named_parameters():
-            param.requires_grad_(False)
+        # for name, param in runner.model.named_parameters():
+        #     param.requires_grad_(False)
 
         for name, param in runner.model.named_parameters():
-            if 'Ipsl_module.transformer_decoder' in name:
-                param.requires_grad_(True)
-            if 'Ipsl_module.transformer_decoder_projector' in name:
-                param.requires_grad_(True)
+            if 'Ipsl_module.vision_tower' in name:
+                param.requires_grad_(False)
+            if 'Ipsl_module.semantic_projector' in name:
+                param.requires_grad_(False)
 
         print('=' * 90)
         print(runner.model)
