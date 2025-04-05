@@ -1,4 +1,4 @@
-data*
+data/
 archive*
 pretrained_models*
 work_dirs*
