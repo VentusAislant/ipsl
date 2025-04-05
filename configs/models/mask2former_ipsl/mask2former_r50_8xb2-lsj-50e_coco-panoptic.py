@@ -216,7 +216,7 @@ optim_wrapper = dict(
         betas=(0.9, 0.999)),
     paramwise_cfg=dict(
         custom_keys={
-            'backbone': dict(lr_mult=0.5),
+            'backbone': dict(lr_mult=0.1),
             'panoptic_head': dict(lr_mult=0.5),
             'query_embed': embed_multi,
             'query_feat': embed_multi,
