@@ -4,9 +4,9 @@ Image Patch Semantic Learning
 - create env
     ```shell
     # 创建conda虚拟环境
-    conda create -n ispl python=3.10 -y
+    conda create -n ipsl python=3.10 -y
     # 激活虚拟环境
-    conda activate ispl
+    conda activate ipsl
     
     # 安装最新的 torch 和 torchvision
     pip install torch torchvision
