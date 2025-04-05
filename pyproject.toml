@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ipsl"
+version = "1.0.0"
+description = "TODO."
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+]
+dependencies = [
+    "torch", "torchvision",
+    "mmengine==0.10.7",
+    "mmcv==2.1.0", "mmdet==3.3.0", "mmpretrain==1.2.0"
+]
+
+#[project.optional-dependencies]
+
+#[project.urls]
+#"Homepage" = "todo"
+#"Bug Tracker" = "todo"
+
+[tool.setuptools.packages.find]
+exclude = ["data*", "scripts*", "logs*", "pretrained_models*", "checkpoints*", "configs*", "tmp*", "mmdetection*", "work_dirs*"]
+
+[tool.wheel]
+exclude = ["data*", "scripts*", "logs*", "pretrained_models*", "checkpoints*", "configs*", "tmp*", "mmdetection*", "work_dirs*"]
